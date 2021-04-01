@@ -45,4 +45,20 @@ def task_description_list(list_of_tasks):
 
 print(task_description_list(tasks))
 
+def print_task_within_time(list_of_tasks):
+    task_description_list = []
+    for task in list_of_tasks:
+        if task['time_taken'] >= 10:
+            task_description_list.append(task)
+    return task_description_list
+
+print(task_description_list(tasks))
+
+def print_task_with_description(list_of_tasks):
+    for task in list_of_tasks:
+        if task['description'] == "Wash Dishes":
+            return task
+
+print(task_description_list(tasks))
+        
     
