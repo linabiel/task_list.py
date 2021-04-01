@@ -6,11 +6,6 @@ tasks = [
     { "description": "Walk Dog", "completed": True, "time_taken": 60 },
 ]
 
-# def list of uncompleted tasks
-
-# input a list of tasks
-
-# loop thorugh tasks and print uncompleted tasks
 
 # Print a list of uncompleted tasks
 
@@ -22,11 +17,32 @@ tasks = [
 
 # Print any task with a given description
 
-def print_uncompleted_tasks(list_of_tasks): 
-    uncompleted_tasks = []
-    for task in list_of_tasks:
-        if task['completed'] == False:
-            uncompleted_tasks.append(task)
-    return uncompleted_tasks
+# def print_uncompleted_tasks(list_of_tasks): 
+#     uncompleted_tasks = []
+#     for task in list_of_tasks:
+#         if task['completed'] == False:
+#             uncompleted_tasks.append(task)
+#     return uncompleted_tasks
 
-print(print_uncompleted_tasks(tasks))
+# print(print_uncompleted_tasks(tasks))
+
+
+def print_completed_tasks(list_of_tasks): 
+    completed_tasks = []
+    for task in list_of_tasks:
+        if task['completed'] == True:
+            completed_tasks.append(task)
+    return completed_tasks
+
+print(print_completed_tasks(tasks))
+
+def task_description_list(list_of_tasks):
+    task_descriptions = []
+    for tasks in list_of_tasks:
+        task_descriptions.append(tasks['description'])
+        
+    return task_descriptions
+
+print(task_description_list(tasks))
+
+    
